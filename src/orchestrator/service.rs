@@ -2822,6 +2822,7 @@ where
                         }
                     }
                     SandboxState::Creating
+                    | SandboxState::Resizing
                     | SandboxState::Snapshotting
                     | SandboxState::Forking
                     | SandboxState::Pausing

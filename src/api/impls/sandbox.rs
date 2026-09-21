@@ -1247,6 +1247,7 @@ impl Sandboxes<()> for ApiImpl {
             SandboxState::Creating
             | SandboxState::Resuming
             | SandboxState::Running
+            | SandboxState::Resizing
             | SandboxState::Snapshotting
             | SandboxState::Forking => {
                 match self
