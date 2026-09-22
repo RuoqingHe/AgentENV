@@ -113,6 +113,7 @@ fn make_orchestrator_without_background_with_factory_and_persister<
         sandboxes: RwLock::new(HashMap::new()),
         template_build_ids: RwLock::new(HashSet::new()),
         deletions: tokio::sync::Mutex::new(HashMap::new()),
+        memory_resize_statuses: RwLock::new(HashMap::new()),
         proxy_routes: RwLock::new(ProxyRouteTable::default()),
         next_proxy_route_version: AtomicU64::new(1),
         counters: Default::default(),
